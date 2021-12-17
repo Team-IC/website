@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <base target="_blank">
+    <meta charset="UTF-8" />
+    <title>Team IC</title>
+    <link rel="shortcut icon" type="image/png" href="https://media.discordapp.net/attachments/898469224547254272/901773324735107082/9586f2159f473a95bec7e688c5613669.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://replit.com/@aquabots/teamicml#css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="./website.css" crossorigin="anonymous" type="text/css">
+    <meta property="og:site_name" content="Home">
+    <meta property="og:title" content="Team IC">
+    <meta property="og:image" content="https://media.discordapp.net/attachments/898469224547254272/901773324735107082/9586f2159f473a95bec7e688c5613669.png">
+    <meta property="og:description" content="A small group of people who want to put their best in all sort of coding related stuff!">
+    <!-- remember, jQuery is completely optional -->
+    <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
+    <script type="text/javascript" src="./home/runner/teamic.ml/js/jquery.particleground.js"></script>
+    <script type="text/javascript" src="./website.js"></script>
+    <script type="text/javascript" src="./home/runner/teamic.ml/js/demo.js"></script>
+</head>
+
+
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+
+            <div class="logo_name">Team IC</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+
+            <li>
+                <a href="/devs">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Developers</span>
+                </a>
+                <span class="tooltip">Developers</span>
+            </li>
+            <li>
+                <a href="https://stats.uptimerobot.com/2qwggSV8vP">
+                    <i class='bx bxs-timer'></i>
+                    <span class="links_name">Status</span>
+                </a>
+                <span class="tooltip">Status</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-github'></i>
+                    <span class="links_name">Github Repo</span>
+                </a>
+                <span class="tooltip">Github Repo</span>
+            </li>
+            <li>
+                <a href="https://discord.gg/7uMzkKNeYv">
+                    <i class='bx bxl-discord'></i>
+                    <span class="links_name">Discord</span>
+                </a>
+                <span class="tooltip">Discord</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bxs-bot'></i>
+                    <span class="links_name">Bots</span>
+                </a>
+                <span class="tooltip">Bots</span>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+<div id="particles">
+    <div id="intro">
+        <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">Team IC</h2>
+        <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
+
+        <a href="https://www.youtube.com/c/CodingIndia" style="color: white;"><i class="fab fa-youtube" style="font-size: 2em;"></i></a> &nbsp
+        <a href="https://discord.gg/7T4NK4Bw39" style="color: white;"><i class="fab fa-discord" style="font-size: 2em;"></i></a> &nbsp
+        <a href="https://github.com/Team-IC" style="color: white;"><i class="fab fa-github" style="font-size: 2em;"></i></a>
+        <center>
+            <footer>
+                <p> � Copyright 2021-2022 Team IC All rights reserved.</p>
+            </footer>
+        </center>
+    </div>
+</div>
+<style>
+    @viewport {
+        width: device-width;
+        zoom: 1.0;
+    }
+    
+    @-ms-viewport {
+        width: device-width;
+    }
+    
+    @media screen and (max-width:320px) {
+        /* CSS for screens that are 320 pixels or less will be put in this section */
+    }
+    
+    @media screen and (min-width:320px) and (max-width:640px) {
+        /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+    }
+    /* code that is here, until the first @media block, will apply to any screen size */
+    
+    #somethingorother {
+        width: 800px;
+    }
+    
+    @media screen and (max-width: 320px) {
+        /* comes into effect for screens less than or equal to 320 pixels */
+        #somethingorother {
+            width: 120px;
+        }
+    }
+    
+    @media screen and (min-width: 321px) and (max-width: 480px) {
+        /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+        #somethingorother {
+            width: 320px;
+        }
+    }
+    
+    @media screen and (min-width: 481px) {
+        /* comes into effect for screens larger than or equal to 481 pixels */
+        #somethingorother {
+            width: 480px;
+        }
+    }
+    /* code that is here will apply to any screen size */
+</style>
+
+
+
+</body>
+
+</html>
